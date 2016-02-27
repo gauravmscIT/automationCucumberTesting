@@ -13,10 +13,11 @@ import static com.automation.tests.helpers.BrowserDriver.getCurrentDriver;
 
 @Component
 public class HomePage extends PageObject {
+    List<WebElement> results = getCurrentDriver().findElements(By.cssSelector(".b_algo>h2>a"));
 
 
     public WebElement searchField() {
-        return waitForElement(By.cssSelector("#sb_form_qanuary"));
+        return waitForElement(By.cssSelector("#sb_form_q"));
 
 
     }
@@ -29,7 +30,7 @@ public class HomePage extends PageObject {
     public boolean isKeywordPresentInSearchResults(String expectedText) {
         int i = 0;
         waitForElement(By.cssSelector(".b_algo>h2>a"));
-        List<WebElement> results = getCurrentDriver().findElements(By.cssSelector(".b_algo>h2>a"));
+
         for (WebElement result : results) {
             if (!result.getText().toLowerCase().contains(expectedText.toLowerCase())) {
                 i += 1;
