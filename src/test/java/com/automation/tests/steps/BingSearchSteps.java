@@ -6,9 +6,6 @@ import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import lombok.AccessLevel;
-import lombok.experimental.FieldDefaults;
-import lombok.extern.java.Log;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.logging.LogType;
@@ -25,7 +22,6 @@ import static com.automation.tests.helpers.BrowserDriver.getCurrentDriver;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @Slf4j
-@FieldDefaults(level = AccessLevel.PRIVATE)
 public class BingSearchSteps {
     @Autowired
     HomePage homePage;

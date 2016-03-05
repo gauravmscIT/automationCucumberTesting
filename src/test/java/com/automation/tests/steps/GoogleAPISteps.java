@@ -10,6 +10,7 @@ import cucumber.api.java.en.When;
 import static com.jayway.restassured.RestAssured.given;
 import static org.assertj.core.api.Assertions.assertThat;
 
+
 public class GoogleAPISteps {
     private Response response;
     private static final String GOOGLE_API_EXAMPLE = "https://www.googleapis.com/customsearch/v1";

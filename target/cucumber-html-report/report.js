@@ -13,7 +13,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 939748613,
+  "duration": 946735861,
   "status": "passed"
 });
 formatter.scenario({
@@ -48,7 +48,7 @@ formatter.match({
   "location": "BingSearchSteps.I_am_on_bing_homepage()"
 });
 formatter.result({
-  "duration": 129106868,
+  "duration": 179779497,
   "status": "passed"
 });
 formatter.match({
@@ -61,25 +61,25 @@ formatter.match({
   "location": "BingSearchSteps.I_search_for_the_keyword(String)"
 });
 formatter.result({
-  "duration": 1836291977,
+  "duration": 1499983936,
   "status": "passed"
 });
 formatter.match({
   "location": "BingSearchSteps.I_should_see_relevant_results()"
 });
 formatter.result({
-  "duration": 326782116,
+  "duration": 329345429,
   "status": "passed"
 });
 formatter.match({
   "location": "BingSearchSteps.there_are_no_JavaScript_Errors()"
 });
 formatter.result({
-  "duration": 59204614,
+  "duration": 63249103,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13698308,
+  "duration": 16804868,
   "status": "passed"
 });
 formatter.uri("GoogleAPI.feature");
@@ -97,7 +97,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 237354606,
+  "duration": 275596410,
   "status": "passed"
 });
 formatter.scenario({
@@ -133,7 +133,7 @@ formatter.match({
   "location": "GoogleAPISteps.I_hit_google_API_with_q_value(String)"
 });
 formatter.result({
-  "duration": 1736895762,
+  "duration": 3573862545,
   "status": "passed"
 });
 formatter.match({
@@ -146,7 +146,7 @@ formatter.match({
   "location": "GoogleAPISteps.the_response_code_should_be(int)"
 });
 formatter.result({
-  "duration": 4679211,
+  "duration": 5965623,
   "status": "passed"
 });
 formatter.match({
@@ -159,11 +159,11 @@ formatter.match({
   "location": "GoogleAPISteps.the_message_should_be(String)"
 });
 formatter.result({
-  "duration": 677204581,
+  "duration": 557748956,
   "status": "passed"
 });
 formatter.after({
-  "duration": 8563593,
+  "duration": 10162256,
   "status": "passed"
 });
 });
