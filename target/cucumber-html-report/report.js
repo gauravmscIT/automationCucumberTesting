@@ -1,54 +1,54 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("BingSearch.feature");
 formatter.feature({
+  "line": 2,
+  "name": "Search on Bing",
+  "description": "",
   "id": "search-on-bing",
+  "keyword": "Feature",
   "tags": [
     {
-      "name": "@acceptance_test",
-      "line": 1
+      "line": 1,
+      "name": "@acceptance_test"
     }
-  ],
-  "description": "",
-  "name": "Search on Bing",
-  "keyword": "Feature",
-  "line": 2
+  ]
 });
 formatter.before({
-  "duration": 1236436000,
+  "duration": 939748613,
   "status": "passed"
 });
 formatter.scenario({
-  "id": "search-on-bing;user-can-search-for-keywords-on-bing",
-  "description": "",
-  "name": "User can search for keywords on Bing",
-  "keyword": "Scenario",
   "line": 4,
-  "type": "scenario"
+  "name": "User can search for keywords on Bing",
+  "description": "",
+  "id": "search-on-bing;user-can-search-for-keywords-on-bing",
+  "type": "scenario",
+  "keyword": "Scenario"
 });
 formatter.step({
+  "line": 5,
   "name": "I am on bing homepage",
-  "keyword": "Given ",
-  "line": 5
+  "keyword": "Given "
 });
 formatter.step({
+  "line": 6,
   "name": "I search for the keyword \"cucumber\"",
-  "keyword": "When ",
-  "line": 6
+  "keyword": "When "
 });
 formatter.step({
+  "line": 7,
   "name": "I should see relevant results",
-  "keyword": "Then ",
-  "line": 7
+  "keyword": "Then "
 });
 formatter.step({
+  "line": 8,
   "name": "there are no JavaScript Errors",
-  "keyword": "And ",
-  "line": 8
+  "keyword": "And "
 });
 formatter.match({
   "location": "BingSearchSteps.I_am_on_bing_homepage()"
 });
 formatter.result({
-  "duration": 133712000,
+  "duration": 129106868,
   "status": "passed"
 });
 formatter.match({
@@ -61,67 +61,67 @@ formatter.match({
   "location": "BingSearchSteps.I_search_for_the_keyword(String)"
 });
 formatter.result({
-  "duration": 1997641000,
+  "duration": 1836291977,
   "status": "passed"
 });
 formatter.match({
   "location": "BingSearchSteps.I_should_see_relevant_results()"
 });
 formatter.result({
-  "duration": 311910000,
+  "duration": 326782116,
   "status": "passed"
 });
 formatter.match({
   "location": "BingSearchSteps.there_are_no_JavaScript_Errors()"
 });
 formatter.result({
-  "duration": 99956000,
+  "duration": 59204614,
   "status": "passed"
 });
 formatter.after({
-  "duration": 40865000,
+  "duration": 13698308,
   "status": "passed"
 });
 formatter.uri("GoogleAPI.feature");
 formatter.feature({
+  "line": 2,
+  "name": "Checking response of a Google API",
+  "description": "",
   "id": "checking-response-of-a-google-api",
+  "keyword": "Feature",
   "tags": [
     {
-      "name": "@acceptance_test",
-      "line": 1
+      "line": 1,
+      "name": "@acceptance_test"
     }
-  ],
-  "description": "",
-  "name": "Checking response of a Google API",
-  "keyword": "Feature",
-  "line": 2
+  ]
 });
 formatter.before({
-  "duration": 210044000,
+  "duration": 237354606,
   "status": "passed"
 });
 formatter.scenario({
-  "id": "checking-response-of-a-google-api;example-scenario-to-hit-google-api",
-  "description": "",
-  "name": "Example scenario to hit google API",
-  "keyword": "Scenario",
   "line": 4,
-  "type": "scenario"
+  "name": "Example scenario to hit google API",
+  "description": "",
+  "id": "checking-response-of-a-google-api;example-scenario-to-hit-google-api",
+  "type": "scenario",
+  "keyword": "Scenario"
 });
 formatter.step({
+  "line": 5,
   "name": "I hit google API with q value \"cucumber\"",
-  "keyword": "When ",
-  "line": 5
+  "keyword": "When "
 });
 formatter.step({
+  "line": 6,
   "name": "the response code should be 400",
-  "keyword": "Then ",
-  "line": 6
+  "keyword": "Then "
 });
 formatter.step({
+  "line": 7,
   "name": "the message should be \"Bad Request\"",
-  "keyword": "And ",
-  "line": 7
+  "keyword": "And "
 });
 formatter.match({
   "arguments": [
@@ -133,7 +133,7 @@ formatter.match({
   "location": "GoogleAPISteps.I_hit_google_API_with_q_value(String)"
 });
 formatter.result({
-  "duration": 2668802000,
+  "duration": 1736895762,
   "status": "passed"
 });
 formatter.match({
@@ -146,7 +146,7 @@ formatter.match({
   "location": "GoogleAPISteps.the_response_code_should_be(int)"
 });
 formatter.result({
-  "duration": 4198000,
+  "duration": 4679211,
   "status": "passed"
 });
 formatter.match({
@@ -159,11 +159,11 @@ formatter.match({
   "location": "GoogleAPISteps.the_message_should_be(String)"
 });
 formatter.result({
-  "duration": 411583000,
+  "duration": 677204581,
   "status": "passed"
 });
 formatter.after({
-  "duration": 12793000,
+  "duration": 8563593,
   "status": "passed"
 });
 });

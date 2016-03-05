@@ -6,21 +6,29 @@ import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import lombok.AccessLevel;
+import lombok.experimental.FieldDefaults;
+import lombok.extern.java.Log;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.logging.LogType;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
+import java.awt.*;
+import java.awt.event.KeyEvent;
 import java.util.ArrayList;
+import lombok.extern.slf4j.Slf4j;
+
 
 import static com.automation.tests.helpers.BrowserDriver.getCurrentDriver;
 import static org.assertj.core.api.Assertions.assertThat;
 
-
+@Slf4j
+@FieldDefaults(level = AccessLevel.PRIVATE)
 public class BingSearchSteps {
     @Autowired
-    private HomePage homePage;
+    HomePage homePage;
 
     String keyword;
 
@@ -34,6 +42,9 @@ public class BingSearchSteps {
     @When("^I search for the keyword \"([^\"]*)\"$")
     public void I_search_for_the_keyword(String keyword) throws Throwable {
         this.keyword = keyword;
+        homePage.searchField().clear();
+//        Robot robot = new Robot();
+//        robot.keyPress(KeyEvent.VK_CAPS_LOCK);
         homePage.searchField().clear();
         homePage.searchField().sendKeys(keyword);
         homePage.goButton().click();
@@ -56,7 +67,8 @@ public class BingSearchSteps {
         for (LogEntry entry : logEntries) {
             if (entry.getLevel().toString().equals("ERROR")) {
                 errors.add(entry.toString());
-                System.out.println("Errors:" + entry);
+
+                log.error("Errors:" + entry);
 
 
             }

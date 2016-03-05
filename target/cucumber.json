@@ -1,34 +1,12 @@
 [
   {
-    "id": "search-on-bing",
-    "tags": [
-      {
-        "name": "@acceptance_test",
-        "line": 1
-      }
-    ],
-    "description": "",
-    "name": "Search on Bing",
-    "keyword": "Feature",
     "line": 2,
     "elements": [
       {
-        "after": [
-          {
-            "result": {
-              "duration": 40865000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ScreenshotHook.embedScreenshot(Scenario)"
-            }
-          }
-        ],
-        "id": "search-on-bing;user-can-search-for-keywords-on-bing",
         "before": [
           {
             "result": {
-              "duration": 1236436000,
+              "duration": 939748613,
               "status": "passed"
             },
             "match": {
@@ -36,31 +14,43 @@
             }
           }
         ],
-        "description": "",
-        "name": "User can search for keywords on Bing",
-        "keyword": "Scenario",
         "line": 4,
+        "name": "User can search for keywords on Bing",
+        "description": "",
+        "id": "search-on-bing;user-can-search-for-keywords-on-bing",
+        "after": [
+          {
+            "result": {
+              "duration": 13698308,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScreenshotHook.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 133712000,
+              "duration": 129106868,
               "status": "passed"
             },
-            "name": "I am on bing homepage",
-            "keyword": "Given ",
             "line": 5,
+            "name": "I am on bing homepage",
             "match": {
               "location": "BingSearchSteps.I_am_on_bing_homepage()"
-            }
+            },
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1997641000,
+              "duration": 1836291977,
               "status": "passed"
             },
-            "name": "I search for the keyword \"cucumber\"",
-            "keyword": "When ",
             "line": 6,
+            "name": "I search for the keyword \"cucumber\"",
             "match": {
               "arguments": [
                 {
@@ -69,68 +59,56 @@
                 }
               ],
               "location": "BingSearchSteps.I_search_for_the_keyword(String)"
-            }
+            },
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 311910000,
+              "duration": 326782116,
               "status": "passed"
             },
-            "name": "I should see relevant results",
-            "keyword": "Then ",
             "line": 7,
+            "name": "I should see relevant results",
             "match": {
               "location": "BingSearchSteps.I_should_see_relevant_results()"
-            }
+            },
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 99956000,
+              "duration": 59204614,
               "status": "passed"
             },
-            "name": "there are no JavaScript Errors",
-            "keyword": "And ",
             "line": 8,
+            "name": "there are no JavaScript Errors",
             "match": {
               "location": "BingSearchSteps.there_are_no_JavaScript_Errors()"
-            }
+            },
+            "keyword": "And "
           }
-        ],
-        "type": "scenario"
+        ]
       }
     ],
-    "uri": "BingSearch.feature"
-  },
-  {
-    "id": "checking-response-of-a-google-api",
+    "name": "Search on Bing",
+    "description": "",
+    "id": "search-on-bing",
+    "keyword": "Feature",
+    "uri": "BingSearch.feature",
     "tags": [
       {
-        "name": "@acceptance_test",
-        "line": 1
+        "line": 1,
+        "name": "@acceptance_test"
       }
-    ],
-    "description": "",
-    "name": "Checking response of a Google API",
-    "keyword": "Feature",
+    ]
+  },
+  {
     "line": 2,
     "elements": [
       {
-        "after": [
-          {
-            "result": {
-              "duration": 12793000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ScreenshotHook.embedScreenshot(Scenario)"
-            }
-          }
-        ],
-        "id": "checking-response-of-a-google-api;example-scenario-to-hit-google-api",
         "before": [
           {
             "result": {
-              "duration": 210044000,
+              "duration": 237354606,
               "status": "passed"
             },
             "match": {
@@ -138,19 +116,31 @@
             }
           }
         ],
-        "description": "",
-        "name": "Example scenario to hit google API",
-        "keyword": "Scenario",
         "line": 4,
+        "name": "Example scenario to hit google API",
+        "description": "",
+        "id": "checking-response-of-a-google-api;example-scenario-to-hit-google-api",
+        "after": [
+          {
+            "result": {
+              "duration": 8563593,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScreenshotHook.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2668802000,
+              "duration": 1736895762,
               "status": "passed"
             },
-            "name": "I hit google API with q value \"cucumber\"",
-            "keyword": "When ",
             "line": 5,
+            "name": "I hit google API with q value \"cucumber\"",
             "match": {
               "arguments": [
                 {
@@ -159,16 +149,16 @@
                 }
               ],
               "location": "GoogleAPISteps.I_hit_google_API_with_q_value(String)"
-            }
+            },
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 4198000,
+              "duration": 4679211,
               "status": "passed"
             },
-            "name": "the response code should be 400",
-            "keyword": "Then ",
             "line": 6,
+            "name": "the response code should be 400",
             "match": {
               "arguments": [
                 {
@@ -177,16 +167,16 @@
                 }
               ],
               "location": "GoogleAPISteps.the_response_code_should_be(int)"
-            }
+            },
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 411583000,
+              "duration": 677204581,
               "status": "passed"
             },
-            "name": "the message should be \"Bad Request\"",
-            "keyword": "And ",
             "line": 7,
+            "name": "the message should be \"Bad Request\"",
             "match": {
               "arguments": [
                 {
@@ -195,12 +185,22 @@
                 }
               ],
               "location": "GoogleAPISteps.the_message_should_be(String)"
-            }
+            },
+            "keyword": "And "
           }
-        ],
-        "type": "scenario"
+        ]
       }
     ],
-    "uri": "GoogleAPI.feature"
+    "name": "Checking response of a Google API",
+    "description": "",
+    "id": "checking-response-of-a-google-api",
+    "keyword": "Feature",
+    "uri": "GoogleAPI.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@acceptance_test"
+      }
+    ]
   }
 ]
